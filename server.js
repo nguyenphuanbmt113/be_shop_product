@@ -2,7 +2,7 @@ import cors from "cors";
 import express from "express";
 import initRoutes from "./src/route";
 require("dotenv").config();
-import dbConnect from "../server/src/config/connectDB";
+import dbConnect from "./src/config/connectDB";
 const app = express();
 dbConnect();
 app.use(cors());
