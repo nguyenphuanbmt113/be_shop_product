@@ -19,7 +19,11 @@ app.use(express.json());
 
 //đọc đc data object
 app.use(express.urlencoded({ extended: true }));
-
+app.get("/", (req, res) => {
+  return res.json({
+    mes: "Welcome to my be",
+  });
+});
 //set route
 initRoutes(app);
 
